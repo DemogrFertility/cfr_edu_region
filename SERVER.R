@@ -148,7 +148,7 @@ server <- function(input, output) {
     output$Country <- renderText(ifelse(is.na(selected$GDP),NA,paste("Country: ",selected$COUNTRY)))
     output$Region  <- renderText(ifelse(is.na(selected$GDP),NA,paste("Region: ",selected$REGION_ENGLISH)))
     output$GDP     <- renderText(ifelse(is.na(selected$GDP),NA,paste("GDP: ",round(selected$GDP), " euro")))
-    output$Fertility <- renderText(ifelse(is.na(selected$GDP),NA,paste("CFR: ",paste0(round(c(selected$EB_fert_Low,selected$EB_fert_Medium,selected$EB_fert_High),2),collapse = ", "))))
+    output$Fertility <- renderText(ifelse(is.na(selected$GDP),NA,paste("CFR: ",paste0(format(c(selected$EB_fert_Low,selected$EB_fert_Medium,selected$EB_fert_High),nsmall = 2),collapse = ", "))))
     output$Noteline  <- renderText(ifelse(is.na(selected$GDP),NA,"................................................."))
     output$Note1     <- renderText(ifelse(is.na(selected$GDP),NA,"Bars and their confidence intervals show the cohort fertility rates (CFRs) by level of education and region of living estimated by the Empirical Bayesian method."))
     output$Note2     <- renderText(ifelse(is.na(selected$GDP),NA,"Blue crosses show the observed cohort fertility rates (CFRs) by level of education and region of living. Rates for Belgium, Hungary, Lithuania, Netherlands, Norway, and Sweden are based on full samples."))
