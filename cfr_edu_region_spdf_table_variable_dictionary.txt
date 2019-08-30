@@ -8,7 +8,7 @@
  fert_Low	: observed cohort fertility rate of women with low education level
  fert_Medium	: observed cohort fertility rate of women with medium education level
  fert_High	: observed cohort fertility rate of women with high education level
- EB_fert_Low	: Empirical bayesian estimation of cohort fertility rate (EB-CFR) of women with low education level
+ EB_fert_Low	: Empirical bayesian estimate of cohort fertility rate (EB-CFR) of women with low education level
  EB_fert_Low_CIL	: lower boundary of EB-CFR of women with low education level
  EB_fert_Low_CIU	: upper boundary of EB-CFR of women with low education level
  EB_fert_Medium	: EB cohort fertility rate of women with medium education level
@@ -17,6 +17,6 @@
  EB_fert_High	: EB cohort fertility rate of women with high education level
  EB_fert_High_CIL	: lower boundary of EB-CFR of women with high education level
  EB_fert_High_CIU	: upper boundary of EB-CFR of women with high education level
- Aver_Low	: the average of observed CFRs across 15 European countries of women with low education level
- Aver_Medium	: the average of observed CFRs across 15 European countries of women with medium education level
- Aver_High	: the average of observed CFRs across 15 European countries of women with high education level
+ Aver_Low	: average of observed CFRs across 15 European countries of women with low education level
+ Aver_Medium	: average of observed CFRs across 15 European countries of women with medium education level
+ Aver_High	: average of observed CFRs across 15 European countries of women with high education level
