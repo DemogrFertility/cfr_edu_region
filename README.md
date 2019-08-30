@@ -7,10 +7,18 @@ This program is free software: you can redistribute it and/or modify it under th
 
 ****************************************************************************************************************************************
 1. Interactive map:
+
     a. SERVER.R
+    
     b. UI.R
+    
     c. cfr_edu_region_map.Rdata
+    
     d. cfr_edu_region_spdf.Rdata
+    
+    
 2. Results of cohort fertility rates:
+
     a. cfr_edu_region_spdf_table.csv
+    
     b. variable dictionary
