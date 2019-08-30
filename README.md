@@ -18,9 +18,8 @@ List of objects:
     
     d. cfr_edu_region_spdf.Rdata
     
-    
-2. Results of cohort fertility rates:
+2. 2.	Cohort fertility rates and other data:
 
     a. cfr_edu_region_spdf_table.csv
     
-    b. variable dictionary
+    b. cfr_edu_region_spdf_table_variable_dictionary.txt
