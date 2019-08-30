@@ -2,8 +2,8 @@
 # cfr_edu_region: interactive map
 # 
 # Input data:
-#     1. cfr_edu_region_shiny_FerGdp_map.Rdata
-#     2. cfr_edu_region_shiny_FerGdp_spdf.Rdata
+#     1. cfr_edu_region_map.Rdata
+#     2. cfr_edu_region_spdf.Rdata
 # 
 #
 # 2019-08-30
@@ -15,8 +15,8 @@ library(leaflet)
 library(ggplot2)
 library(maptools)
 library(rgeos)
-load("cfr_edu_region_shiny_FerGdp_map.Rdata")
-load("cfr_edu_region_shiny_FerGdp_spdf.Rdata")
+load("cfr_edu_region_map.Rdata")
+load("cfr_edu_region_spdf.Rdata")
 ####################################################################################
 #### barplot
 plot_cfr_vs_nobs <- function(CFR=c(2.010228,1.724783,1.64745), 
