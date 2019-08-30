@@ -42,7 +42,6 @@ plot_cfr_vs_nobs <- function(CFR=c(2.010228,1.724783,1.64745),
   # Plot
   g <- ggplot(tmp, aes(ymin = 0)) + 
     geom_rect(aes(xmin = left, xmax = right, ymax = CFR, fill = group)) +
-    ylim(0,upcfr) +
     xlab("Percentage of women") + 
     ylab("Cohort fertility rate (CFR)") + 
     coord_cartesian(ylim=c(1,upcfr))+
@@ -53,14 +52,13 @@ plot_cfr_vs_nobs <- function(CFR=c(2.010228,1.724783,1.64745),
           panel.grid = element_blank(),
           panel.grid.major.y = element_line(colour="grey")) + 
     guides(fill=guide_legend("Education"))+ 
-    scale_fill_discrete(name="Education")+
     geom_hline(aes(yintercept = hline[1]),colour="red", linetype="dashed",size=1.1) +
     geom_hline(aes(yintercept = hline[2]),colour="green", linetype="dashed",size=1.1) +
     geom_hline(aes(yintercept = hline[3]),colour="blue", linetype="dashed",size=1.1)+
     geom_segment(aes(x=pos,y=lower,xend=pos,yend=upper),data = tmp,size=0.6)+
     geom_segment(aes(x=pos - (right-left)/5,y=lower,xend=pos + (right-left)/5,yend=lower),data = tmp,size=0.6)+
     geom_segment(aes(x=pos - (right-left)/5,y=upper,xend=pos + (right-left)/5,yend=upper),data = tmp,size=0.6)+
-    geom_point(aes(x=pos,y=CFRobs),data=tmp,shape=4,size=3.5,col="blue",lwd=3)
+    geom_point(aes(x=pos,y=CFRobs),data=tmp,shape=4,size=3.5,col="blue")
     
   if(is.na(CFR[1])){
     return(NA)
